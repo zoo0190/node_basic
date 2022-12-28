@@ -1,10 +1,5 @@
-// // import { dirname } from 'path';
-// // import { fileURLToPath } from 'url';
-// // const __filename = fileURLToPath(import.meta.url);
-// // const __dirname = dirname(__filename);
-// // export { __filename, __dirname };
+import { __ } from './utils/my_path.js';
+const { __dirname, __filename } = __(import.meta.url);
 
-// // // console.log(__dirname);
-// // // console.log(__filename);
-
-// // console.log(global);
+console.log(__dirname);
+console.log(__filename);
